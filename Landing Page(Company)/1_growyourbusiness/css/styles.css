@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+:root{
+	--clr-black:hsla(0,0%,0%,1);
+	--dark-liver-horses: hsla(18, 21%, 28%, 1);
+	--blue-ncs: hsla(198, 58%, 43%, 1);
+	--green-yellow-crayola: hsla(59, 80%, 82%, 1);
+	--maximum-yellow: hsla(61, 92%, 63%, 1);
+	--cinnabar: hsla(4, 88%, 58%, 1);
+	--white: hsla(0,100%,100%,1);
+	--font-family: 'Comfortaa', cursive;
+	--dark-blue: hsl(226, 100%, 48%);
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+/*typography*/
+h1{
+	font-size: 3rem;
+}
+h2{
+	font-size: 2rem;
+}
+h3{
+	font-size: 1rem;
+}
+
+body{
+font-family:var(--font-family);
+
+}
+/*navbar: */
+
+.hamburger-icon{
+	display:none;
+}
+/*navbar*/
+.navbar{
+	background: green;
+	height: 20vh;
+}
+
+.navbar .container{
+	background: cyan;
+	height: 100%;
+}
+.navbar .container h1{
+	width: 100%;
+	background: pink;
+	height: 70%;
+}
+.active{
+	background:var(--blue-ncs);
+	color:white;
+	border-radius: .4rem;
+}
+
+footer{
+	align-self:bottom;
+}
+
+
+/*home*/
+
+.home-head{
+	background: var(--blue-ncs);
+}
+
+.home-head h1{
+	color: var(--white);
+}
+
+.home-head .grid > *:nth-child(2){
+	color: var(--white);
+	font-size: 1.5rem;
+}
+
+/*media-queries: */
+
+@media screen and (min-width: 1400px){
+	.container{
+		background: green;
+	}
+}
+
+/*Utilities*/
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.container{
+	width: 90%;
+	padding: 1rem;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(250x,1fr));
+	grid-gap: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.grid-3{
+	grid-template-columns: repeat(3,minmax(250px,1fr));
+}
+
+.card{
+	background: var(--white);
+	color: black;
+	border-radius: .6rem;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+	padding:1.6rem;
+	margin:1.2rem;
+}
+
+.btn{
+	display: inline-block;
+	padding:.6rem 1.6rem;
+	cursor: pointer;
+	background: var(--blue-ncs);
+	border: 0;
+	font-size:1.3rem;
+	border-radius: .3rem;
+	color:var(--white);
+	text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+	transition:0.3s; 
+	font:inherit;
+}
+
+.btn:hover{
+	background: var(--dark-blue);
+	text-shadow: none;
+	transform:scale(0.98);
+	font-weight: 900;
+
+}
+
+.btn-outline{
+	background: transparent;
+	border:2px solid var(--white);
+	box-shadow: 1px 1px 2px white;
+	font-size: 1.2rem;
+}
+
+.btn-outline:hover{
+	background: var(--white);
+	color:var(--blue);
+	transform:scale(0.98);
+}
+
+a{
+	text-decoration: none;
+}
