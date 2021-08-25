@@ -2,7 +2,7 @@
 :root{
 	--clr-black:hsla(0,0%,0%,1);
 	--dark-liver-horses: hsla(18, 21%, 28%, 1);
-	--blue-ncs: hsla(198, 58%, 43%, 1);
+	--blue-ncs: hsla(198, 58%, 43%, .75);
 	--green-yellow-crayola: hsla(59, 80%, 82%, 1);
 	--maximum-yellow: hsla(61, 92%, 63%, 1);
 	--cinnabar: hsla(4, 88%, 58%, 1);
@@ -28,8 +28,8 @@ h3{
 }
 
 body{
-font-family:var(--font-family);
-
+	font-family:var(--font-family);
+	margin: 0;
 }
 /*navbar: */
 
@@ -37,20 +37,89 @@ font-family:var(--font-family);
 	display:none;
 }
 /*navbar*/
-.navbar{
-	background: green;
-	height: 20vh;
+header{
+	background: var(--blue-ncs);
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
 }
 
-.navbar .container{
-	background: cyan;
+.nav-toggle{
+	display: none;
+}
+
+.nav-toggle-label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 1em;
 	height: 100%;
+	display: flex;
+	align-items: center;
 }
-.navbar .container h1{
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	display: block;
+	background: white;
+	height: 2px;
+	width: 2em;
+	border-radius: 2px;
+	position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	content: '';
+	position: absolute;
+}
+.nav-toggle-label span::before{
+	bottom: 7px;
+}
+.nav-toggle-label span::after{
+	top: 7px;
+}
+
+
+nav{
+	position: absolute;
+	text-align: left;
+	top: 100%;
+	left: 0;
+	background: var(--blue-ncs);
 	width: 100%;
-	background: pink;
-	height: 70%;
+	display: none;
 }
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li{
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+nav a{
+	color: white;
+	font-weight: 800;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+nav a:hover{
+	background: white;
+	color: black;
+}
+
+.nav-toggle:checked ~ nav {
+	display: block;
+
+}
+
 .active{
 	background:var(--blue-ncs);
 	color:white;
@@ -78,13 +147,22 @@ footer{
 }
 
 /*media-queries: */
-
-@media screen and (min-width: 1400px){
-	.container{
+/*
+@media screen and (max-width:980px){
+	header{
 		background: green;
+		height: 10vh;
 	}
-}
+	.logo{
+		font-size: 4.2vh;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
+}
+*/
 /*Utilities*/
 
 .flex{
