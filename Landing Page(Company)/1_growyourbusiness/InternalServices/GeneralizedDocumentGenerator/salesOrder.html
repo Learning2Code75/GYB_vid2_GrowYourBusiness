@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sales Order</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+	<h1 class="sales-order-heading">Sales Order</h1>
+
+	<div class="sales-order">
+			<form class="sales-order-form">
+				<!-- logo -->
+				<h1>Company Logo</h1>
+				<div class="form-control logo-form">
+					<label for="logo-question">Select Company Logo</label>
+					<input id="logo-question" type="file" name="logo">
+				</div>
+				
+
+				<!-- doc id -->
+				<h1>SO Doc details</h1>
+				<div class="form-control docid-form grid-2">
+					<label for="soDate">Enter Date of Sales Order</label>
+					<input type="date" name="soDate" id="soDate">
+					<label for="soNumber">Enter Sales Order Number</label>
+					<input type="number" name="soNumber" id="soNumber">
+					<label for="customerNumber">Enter Customer Number</label>
+					<input type="number" name="customerNumber" id="customerNumber">
+				</div>
+	
+
+				<!-- sender company -->
+				<h1>Sender Company</h1>
+				<div class="form-control grid-2">
+
+					<label for="companyName">Enter Company Name</label>
+					<input type="text" name="companyName" placeholder="Company Name" id="companyName">
+					<label for="companyAddress">Enter Company Address</label>
+					<input type="textarea" name="companyAddress" placeholder="Company Address" id="companyAddress">
+					<label for="companyEmail">Enter Company Email</label>
+					<input type="email" name="companyEmail" placeholder="Company Email Address" id="companyEmail">
+					<label for="pointOfContact">Enter Point Of Contact</label>
+					<input type="text" name="pointOfContact" placeholder="Point Of Contact" id="pointOfContact">
+				</div>
+
+				<!-- Bill To -->
+				<h1>Bill To</h1>
+				<div class="form-control grid-2">
+					<label for="attn">Enter ATTN:(Name/Dept)</label>
+					<input type="text" name="attn" id="attn" placeholder="ATTN(Name/Dept)">
+					<label for="billToCompanyName">Enter Company Name</label>
+					<input type="text" name="billToCompanyName" id="billToCompanyName" placeholder="Company Name">
+					<label for="billToCompanyAddress">Enter Company Address</label>
+					<input type="textarea" name="billToCompanyAddress" placeholder="Company Address" id="billToCompanyAddress">
+					<label for="billToCompanyEmail">Enter Company Email</label>
+					<input type="email" name="billToCompanyEmail" placeholder="Company Email Address" id="billToCompanyEmail">
+
+				</div>
+
+				<!-- Ship To -->
+				<h1>Ship To</h1>
+				<div class="form-control grid-2">
+					<label for="st-attn">Enter ATTN:(Name/Dept)</label>
+					<input type="text" name="st-attn" id="st-attn" placeholder="ATTN(Name/Dept)">
+					<label for="st-billToCompanyName">Enter Company Name</label>
+					<input type="text" name="st-billToCompanyName" id="st-billToCompanyName" placeholder="Company Name">
+					<label for="st-billToCompanyAddress">Enter Company Address</label>
+					<input type="textarea" name="st-billToCompanyAddress" placeholder="Company Address" id="st-billToCompanyAddress">
+
+				</div>
+
+
+				<!-- General Details -->
+				<h1>General Details</h1>
+				<div class="form-control grid-2">
+					<label for="poNumber">Enter P.O. Number</label>
+					<input type="number" name="poNumber" id="poNumber">
+					<label for="salesPerson">Enter Sales Person</label>
+					<input type="text" name="salesPerson" id="salesPerson">
+					<label for="shippingMethod">Enter Shipping Method</label>
+					<input type="text" name="shippingMethod" id="shippingMethod">
+					<label for="shippingTerms">Enter Shipping Terms</label>
+					<input type="text" name="shippingTerms" id="shippingTerms">
+
+					<label for="shipVia">Ship Via</label>
+					<input type="text" name="shipVia" id="shipVia">
+				
+					<label for="shipDate">Shipping Date</label>
+					<input type="date" name="shipDate" id="shipDate">
+				
+					<label for="payment">Payment</label>
+					<input type="number" name="payment" id="payment">
+				
+					<label for="deliveryDate">Delivery Date</label>
+					<input type="date" name="deliveryDate" id="deliveryDate">
+				
+				</div>
+				
+				<input class="btn" type="button" name="submit-details" 
+				value="Add above Details"  >
+
+
+				
+
+			</form>
+
+			<form name="itemAddForm">
+				<!-- product inputs -->
+				<h1>Product Inputs</h1>
+				
+				<div class="form-control grid-2">
+					<label for="productID">Product ID</label>
+					<input type="text" name="productID" id="productID">
+
+					<label for="productName">Product Description</label>
+					<input type="text" name="productDescription" id="productName">
+				
+					<label for="productPrice">Unit Price</label>
+					<input type="number" name="productPrice" id="productPrice">
+
+					<label for="productPrice">Qty</label>
+					<input type="number" name="productPrice" id="productPrice">
+
+					
+				</div>
+			
+					<input type="button" class="btn" name="btn-product" value="Add Item" onclick="addItem();">
+
+
+			</form>
+
+			<button class="btn" onclick="print('so-print')" value="Create Sales Order">
+				Create Sales Order
+			</button>
+
+			<!-- Sales Order Output -->
+
+			<div id="so-print" class="sales-order-pdf">
+				<table class="so-prod" id="prodTable">
+					<thead>
+						<th>Product ID</th>
+						<th>Product Description</th>
+						<th>Quantity</th>
+						<th>Unit Price</th>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+				
+			</div>
+
+	</div>
+
+	<script type="text/javascript">
+		function print(value){
+			let backup = document.body.innerHTML;
+			let socontent = document.getElementById(value).innerHTML;
+			document.body.innerHTML = socontent;
+			window.print();
+			document.body.innerHTML = backup;
+
+
+		}
+
+
+		function addItem(){
+			let prodID = document.itemAddForm.productID.value;
+			console.log(prodID);
+			let tr = document.createElement('tr');
+
+			let td1 = tr.appendChild(document.createElement('td'));
+
+			td1.innerHTML = prodID;
+
+			document.getElementById("prodTable").appendChild(tr);
+		}
+	</script>
+
+</body>
+</html>

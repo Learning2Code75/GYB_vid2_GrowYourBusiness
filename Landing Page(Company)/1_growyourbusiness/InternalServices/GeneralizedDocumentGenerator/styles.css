@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Besley', serif;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color:  white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.sales-order-heading{
+	font-size: 3rem;
+}
+.sales-order{
+	min-width: 90vw;
+	max-width: 95vw;
+	border:  2px solid cyan;
+	padding: 2rem;
+	border-radius: .7rem;
+    margin: 0 auto;
+
+}
+
+.sales-order-form{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    margin: 0 auto;
+
+}
+
+
+.so-prod{
+	border: 2px solid cyan;
+}
+
+.so-prod tr td{
+	border: 2px solid cyan;
+	margin: 0;
+}
+
+/*media-queries*/
+@media print{
+	/*hide unwanted elements*/
+
+}
+
+/*utilities*/
+.form-control{
+	border: 2px solid cyan;
+	width: 100%;
+	margin: 1rem 0;
+	padding: .7rem;
+	border-radius: .5rem;
+}
+.grid-2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.btn{
+	border: 2px solid cyan;
+	color: white;
+	padding: 1rem;
+	border-radius: .4rem;
+	transition: 300ms ease-in;
+
+	background: cyan;
+	font-weight: 600;
+	color: black;
+}
+.btn:hover{
+	background: rgba(10,10,10,.6);
+	font-weight: 900;
+	color: cyan;
+	cursor: pointer;
+
+}
+
+
+input{
+	border: none;
+	font-size: 1rem;
+	margin: .2rem;
+	padding: .5rem;
+	border-radius: .5rem;
+}
+
+

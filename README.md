@@ -56,4 +56,91 @@ refer GYB_webdev_vid2_gyb: https://drive.google.com/drive/folders/1iySQXnYL34MJf
 ## Inputs of Data Visualization: Data and Tasks
 1. tables, networks, spatial(position on earth, countries/states)
 2. attribute types: Categorical , Ordered(Ordinal , Quantitative)
-3. 
+	- examples: categorical: country, religion; quantitive: 
+	- temperature,latitude, longitude, number of people dead 
+3. Special cases: 
+	time : point in time, region in space
+	space: point in space, region in space
+	
+	|		  | Point  		| Region 		 |
+	| :---:   | :-:    		| :-:     		 |
+	| Space   | latitude    | coutry  		 |
+	| Time    | instant    	| interval    	 |
+	| Quantity| value    	| interval    	 |
+4. Tasks 
+	- what questions do you want to answer
+	- what is the problem you are trying to solve?
+	- what decisions are you trying to make?
+	- what outcomes are you hoping for? 
+	- what story do you wnat to tell?
+	- what tasks should the viewer be able to perform?
+
+## Intro to JavaScript 
+1. audience:
+	- programming background
+	- need to learn js quickly
+	- use it in projects
+
+2. ECMASCRIPT(ES6) syntax , most commonly used language features
+
+3. sources: 
+	- [Eloquent Javascript](https://eloquentjavascript.net/)
+	- [ECMAScript 6 features](https://github.com/lukehoban/es6features)
+4. parts covered: 
+    - what is js?
+    - values, types, operators 
+    - program structure
+    - functions  
+    - data structures: objects and arrays
+    - higher - order functions
+    - modules 
+    - asynchronous programming
+
+    
+
+## Intro to HTML ,CSS , SVG 
+
+## Intro to d3.js - face
+
+## Making a Bar Chart with D3.js
+
+## Customizing Axes of a Bar Chart
+
+## Making a scatter plot with d3.js
+
+## making line and area charts with d3.js
+
+## general update pattern of d3.js
+
+## marks and channels in data visualization
+
+## interaction with unidirectional data flow using d3.js
+
+## making a world map with d3
+
+## cheap tricks for interaction on d3.js world map
+
+## blank canvas
+
+## building a tree visualization of world countries with d3.js
+
+## color and size legends with d3.js
+
+## choropleth map with d3.js
+
+## interactive filtering on a choropleth map 
+
+## using color in visualization
+
+## scatter plot with menus
+
+## circles on a map
+
+## line chart with multiple lines
+
+## melting and munging data with javascript 
+
+## selecting a year on a line chart 
+
+
+
