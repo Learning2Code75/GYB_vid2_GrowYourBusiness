@@ -1,0 +1,26 @@
+body{
+	background: black;
+	color: white;
+	font-family: monospace;
+	margin: 0px;
+	overflow: hidden;
+
+}
+
+svg{
+	background: white;
+}
+
+.highlighted{
+	color: yellow;
+}
+
+.lines{
+	stroke: black;
+	stroke-width: 4;
+}
+
+.lines path{
+	stroke: green;
+	stroke-linejoin:  round;
+}

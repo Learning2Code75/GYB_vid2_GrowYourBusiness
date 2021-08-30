@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Async programming</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		setTimeout(
+			()=>{
+				console.log("tick")
+			}
+		,2000)
+
+
+		let myPromise = new Promise((resolve,reject)=>{
+					setTimeout(
+			()=> resolve()
+		,2000)
+
+		})
+		myPromise.then(()=>{
+			console.log("promise resolved")
+		});
+
+		// function that returns a promise
+
+		let waitSeconds = numSeconds => new Promise(resolve=>{
+			const message = `${numSeconds} seconds have passed`;
+			setTimeout(()=> resolve(message), numSeconds*1000)
+		})
+
+		waitSeconds(2).then((message)=>{
+			console.log(message)
+		});
+
+
+	</script>
+
+	<script type="text/javascript">
+		const carsJSON = `[
+		  {
+		    "year": 1997,
+		    "make": "Honda",
+		    "model": "Accord",
+		    "price": 2399
+		  },
+		  {
+		    "model": "nissan",
+		    "make": "leaf"
+		  },
+		  {
+		    "make": "chev",
+		    "model": "trailblazer",
+		    "year": 2009,
+		    "price": 2334
+		  },
+		  {
+		    "make": "honda",
+		    "model": "pilot",
+		    "year": 2003,
+		    "price": 2299
+		  }
+		]`;
+		const cars = JSON.parse(carsJSON);
+		const getCars = ()=> new Promise(resolve => {
+			setTimeout(()=> resolve(cars),2000)
+		})
+
+		let formatCar = (x) =>{
+			const{year,make,model,price} = x;
+			return(
+				`${year} ${make} ${model}: $${price}  ` 
+				)
+		}
+
+		const generateReport = (cars,maxPrice) =>
+			(cars.filter(car => car.price < maxPrice)
+			.map(formatCar)
+			.join('\n'))
+
+		console.log("loading...")
+		
+		getCars().then(cars=>{
+ 			const message = generateReport(cars,2400);
+
+ 			console.log(message);
+
+		})
+
+		console.log(cars)
+
+	</script>
+
+</body>
+</html>

@@ -99,8 +99,55 @@ refer GYB_webdev_vid2_gyb: https://drive.google.com/drive/folders/1iySQXnYL34MJf
     
 
 ## Intro to HTML ,CSS , SVG 
+1. Audience
+	- learning about web dev, graphics and data visualization
+	- need to know the basics(no libraries)
+
+2. Topics:
+	- making shapes and text on the screen
+	- HTML 
+	- CSS
+	- SVG
+
+3. HTML Specifiction encompasses: 
+	- SVG
+	- CSS
+	- HTML the syntax
+
+4. Cars Report with HTML 
+	- header title
+	- bulleted list
+
+5. Cars Report with CSS
+	- customize font
+	- highlight an item
+
+6. Making Shapes with SVG
+	- SVG as image format
+	- SVG in HTML
+
+	- coordinate system
+	- circles
+	- rectangles
+	- lines
+	- colors
+	- groups
+
+	- [First SVG](https://commons.wikimedia.org/wiki/File:Ghostscript_Tiger.svg)
+	- [PNG of the above](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.downloadclipart.net%2Fbrowse%2F93449%2Fsiberian-tiger-png-picture-clipart&psig=AOvVaw3cjAjBx6gIcs7VUFyKcJ_E&ust=1630417669109000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCJDFnaXx2PICFQAAAAAdAAAAABAD)
 
 ## Intro to d3.js - face
+1. audience:
+	- already know basics of javascript , html , css, svg
+	- no prior experience with D3.js
+2. topics: 
+	- loading d3.js
+	- importing d3 function using es6
+	- creating a face using SVG and d3
+	- animation with transitions
+3. D3.js: 
+	- [d3_docs](https://d3js.org/)
+	
 
 ## Making a Bar Chart with D3.js
 

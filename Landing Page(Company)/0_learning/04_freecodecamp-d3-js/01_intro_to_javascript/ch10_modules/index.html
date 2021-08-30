@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cars Report</title>
+</head>
+<body>
+
+	<pre id="message-element">
+		
+	</pre>
+
+ 	<script type="text/javascript" >
+ 		const carsJSON = `[
+		  {
+		    "year": 1997,
+		    "make": "Honda",
+		    "model": "Accord",
+		    "price": 2399
+		  },
+		  {
+		    "model": "nissan",
+		    "make": "leaf"
+		  },
+		  {
+		    "make": "chev",
+		    "model": "trailblazer",
+		    "year": 2009,
+		    "price": 2334
+		  },
+		  {
+		    "make": "honda",
+		    "model": "pilot",
+		    "year": 2003,
+		    "price": 2299
+		  }
+		]`;
+
+		const cars = JSON.parse(carsJSON);	
+		let formatCar = (x) =>{
+			const{year,make,model,price} = x;
+			return(
+				`${year} ${make} ${model}: $${price}  ` 
+				)
+		}
+
+		const maxPrice = 2400;
+
+		const generateReport = (cars,maxPrice) =>
+			(cars.filter(car => car.price < maxPrice)
+			.map(formatCar)
+			.join('\n'))
+
+
+
+ 		const message = generateReport(cars,maxPrice);
+		
+document.getElementById('message-element')
+		.textContent = message;
+console.log(message)
+		
+	
+
+
+ 	</script>
+	
+</body>
+</html>

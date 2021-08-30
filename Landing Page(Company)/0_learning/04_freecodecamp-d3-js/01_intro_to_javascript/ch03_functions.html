@@ -17,7 +17,25 @@
 			return x*x;
 		}
 
+		const factorial= n =>{
+			return(n===0
+			?1
+			:n*factorial(n-1))
+		}
+
+		const fibonnacci = n =>{
+			if(n<=1){
+				return 1;
+			}else{
+				return (fibonnacci(n-1)+ fibonnacci(n-2));
+			}
+
+		}
+
 		console.log(sq(3));
+		console.log(factorial(4));
+		console.log(fibonnacci(4));
+
 
 	</script>
 

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Data Structures, and Objects</title>
+</head>
+<body>
+
+
+
+	<script type="text/javascript">
+		
+		car = {
+			year: 1997,
+			make:'Honda',
+			model:'Accord',
+			price:2399
+
+		};
+		console.log(car);
+		console.log(car['year'])
+		console.log(car.year)
+		let property = 'year';
+		console.log(car[property])
+
+		let cars = ['honda','hyndai','bmw','mercedes'];
+		let objArray = [
+			car,
+		]
+
+	
+		objArray.push({
+			model:"nissan",
+			make:"leaf"
+		})
+
+		objArray.push({
+			make:"chev",
+			model:"trailblazer",
+			year: 2009,
+			price:2334
+		})
+
+		objArray.push({
+			make:"honda",
+			model:"pilot",
+			year: 2003,
+			price:2299
+		})
+
+		console.log(objArray)
+		console.log(objArray.length)
+		console.log(objArray[2])
+
+		for(let i=0;i<cars.length;i++){
+			const car = objArray[i];
+			console.log(car.price);
+		}
+
+		objArray.forEach(car =>{
+			console.log(car.price)
+		})
+
+
+
+		const printCarPrice = (car)=>{
+			console.log(car.price)
+		}
+
+		objArray.forEach(printCarPrice);
+
+		//map: get a new array 
+
+		const newArray = objArray.map(car => car.price)
+		console.log(newArray);
+
+		newArray.sort();
+		console.log(newArray);
+
+		const newObjArray = objArray.filter(car => car.price<2300)
+
+		console.log(newObjArray)
+
+		let yx = "1997 Honda Accord: $2800"
+		const x = {
+			year:2020,
+			make:"honda",
+			model:"SUV",
+			price:"2344"
+		}
+		let formatCar = (x) =>{
+			const{year,make,model,price} = x;
+			return(
+				`${year} ${make} ${model}: $${price}  ` 
+				)
+		}
+
+		const ans = formatCar(x)
+
+		console.log(ans)
+
+		const filteredCars = objArray.filter((car)=> car.price<2400)
+									 .map(formatCar)
+
+		console.log(filteredCars)
+
+		console.log(JSON.stringify(objArray,null,2))
+
+		const newObjArray2 = JSON.parse(JSON.stringify(objArray,null,2));
+		console.log(newObjArray2)
+
+
+
+
+
+
+
+		
+
+
+
+
+
+	</script>
+
+</body>
+</html>
