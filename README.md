@@ -1,8 +1,33 @@
-# a business which whill help grow your business 
+# Grow Your Business
 
-##product perspective
+## product perspective
 1. grow your business by improving your online pressence
-2. 
+2. display home page 
+3. contact page
+4. about page
+6. services page: 12 services till now
+5. pricing page: pricing for all 
+
+## software requirement specification: 
+1. landing page website using : HTML , CSS , JS
+2. selling 12 services now 
+3. contents of the website: 
+		- nav bar: navigate to all pages,
+		- social bar:  social media(github,linkedin,youtube , insta, facebook) and email
+		- home page : breif about company , call to action (form to submit service directly)
+		- contact page: call to action
+		- about page : about company gyb, one para about me, passionate web developer, aspiring to learn new technologies related to web. right now building growYourBusiness projects for clients to enhance resume and one service per client for now to just test out the waters.In the future , planning to expand to more services and provide more than one services to clients.
+		- pricing page : currently application is under development phase therefore providing one service per client for free 
+		- services page : 11 services as a grid, choose a service and contact me regarding it. 
+
+4. Services inside GYB application: 
+	- D3.js visualizations
+	- Sales Order Generator: 
+		1. get product data from google sheets API
+		2. get client , general data from google sheets API 
+		3. use product data in dependent dropdowns to take input for product table 
+		4. print the pdf for the sales order 
+
 
 ## Products availiable:
 1. vid1: PersonalPortfolio - React, CSS
@@ -21,19 +46,37 @@ refer GYB_webdev_vid2_gyb: https://drive.google.com/drive/folders/1iySQXnYL34MJf
 ## Learning: 
 1. traversy media - html css: 
 	learnt about templating css like bootstrap , css grids
-2. freecodecamp - js :
+	https://youtu.be/p0bGHP-PXD4
 
-3. coidng addict - js: 
+2. freecodecamp - js for language:
+
+
+3. coding addict - js for general utilities: 
+
 
 4. freecodecamp - d3.js: 
+
 	
-5. 
+5. html css - responsive design:
 
-6. 
 
+6. html css js - responsive design:	
+
+
+7. google sheets API: 
+	https://youtu.be/VPI27L_fQC4 
+
+8. dependent dropdowns in javascript: 
+	https://youtube.com/playlist?list=PLRmEk9smitaUDco5Y_bYClnFNCHx1jmWY 
+
+9. html css - responsive navbar: 
+	https://youtu.be/8QKOaTYvYUA
+
+10. CSS for invoice : 
+	https://youtu.be/J7kH-yXEy8w?list=PLhoNfB3WZFScWKvVE-_wdqe6_PH9LctiG
 
 # 4. Freecodecamp d3.js : Data Visualization: 
-
+ - link: [d3_js_freecodecamp](https://youtu.be/_8V5o2UHG0E)
 1. analysis
 2. design
 3. Construction - html css svg javascript d3.js
@@ -147,9 +190,37 @@ refer GYB_webdev_vid2_gyb: https://drive.google.com/drive/folders/1iySQXnYL34MJf
 	- animation with transitions
 3. D3.js: 
 	- [d3_docs](https://d3js.org/)
-	
 
-## Making a Bar Chart with D3.js
+
+## Making a Bar Chart with D3.js and SVG
+1. Audience: 
+	- D3 DOM manipulation and SVG
+2. want to learn about visualization data with d3 joins , scales and axes
+3. Topics: 
+	- representing a data table in javascript
+	- creating rectangles for each row
+	- using linear and band scales
+	- margin convention 
+	- adding axes
+4. CSV example for bar chart for population: 
+	- country,population
+ 	- China, 1410000
+ 	- India, 1310000
+ 	- United States, 326767
+ 	- Indonesia , 266896
+5. D3 data join
+	- enter: data 
+	- update: data,elements
+	- exit: elements
+6. linear scale: 
+	- data space (domain) --> screen space(range)
+	- for quantitative attributes
+7. band scale: 
+	- data space (domain) --> screen space( range)
+	- for ordinal attributes
+	- bandwidth is the width of the bar
+8. d3 margin convention to create margins around the
+
 
 ## Customizing Axes of a Bar Chart
 
@@ -190,4 +261,7 @@ refer GYB_webdev_vid2_gyb: https://drive.google.com/drive/folders/1iySQXnYL34MJf
 ## selecting a year on a line chart 
 
 
+
+# 5. html css - responsive design:
+- link :https://youtu.be/D-h8L5hgW-w
 
