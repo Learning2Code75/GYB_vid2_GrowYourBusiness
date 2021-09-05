@@ -1,6 +1,6 @@
 # Grow Your Business
 
-## product perspective
+## product perspective for landing page service
 1. grow your business by improving your online pressence
 2. display home page 
 3. contact page
@@ -54,14 +54,14 @@ refer GYB_webdev_vid2_gyb: https://drive.google.com/drive/folders/1iySQXnYL34MJf
 3. coding addict - js for general utilities: 
 
 
-4. freecodecamp - d3.js: 
+4. freecodecamp - d3.js: not now
 
 	
 5. html css - responsive design:
-
+https://youtu.be/D-h8L5hgW-w
 
 6. html css js - responsive design:	
-
+https://youtu.be/6wOolplgB5o
 
 7. google sheets API: 
 	https://youtu.be/VPI27L_fQC4 
