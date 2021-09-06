@@ -49,31 +49,31 @@ refer GYB_webdev_vid2_gyb: https://drive.google.com/drive/folders/1iySQXnYL34MJf
 	https://youtu.be/p0bGHP-PXD4
 
 2. freecodecamp - js for language:
-
+https://www.youtube.com/watch?v=jS4aFq5-91M&t=16706s
 
 3. coding addict - js for general utilities: 
-
+https://youtu.be/c5SIG7Ie0dM
 
 4. freecodecamp - d3.js: not now
 
-	
-5. html css - responsive design:
-https://youtu.be/D-h8L5hgW-w
 
-6. html css js - responsive design:	
+5. html css js - responsive design:	
 https://youtu.be/6wOolplgB5o
 
-7. google sheets API: 
+6. google sheets API: 
 	https://youtu.be/VPI27L_fQC4 
 
-8. dependent dropdowns in javascript: 
+7. dependent dropdowns in javascript: 
 	https://youtube.com/playlist?list=PLRmEk9smitaUDco5Y_bYClnFNCHx1jmWY 
 
-9. html css - responsive navbar: 
+8. html css - responsive navbar: 
 	https://youtu.be/8QKOaTYvYUA
 
-10. CSS for invoice : 
+9. CSS for invoice : 
 	https://youtu.be/J7kH-yXEy8w?list=PLhoNfB3WZFScWKvVE-_wdqe6_PH9LctiG
+
+10. html for email : 
+https://youtu.be/r4RQ38EoLds
 
 # 4. Freecodecamp d3.js : Data Visualization: 
  - link: [d3_js_freecodecamp](https://youtu.be/_8V5o2UHG0E)
