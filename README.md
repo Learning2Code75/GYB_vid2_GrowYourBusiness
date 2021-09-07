@@ -57,10 +57,10 @@ https://youtu.be/c5SIG7Ie0dM
 4. freecodecamp - d3.js: not now
 
 
-5. html css js - responsive design:	
+5. html css js - responsive design:	(for all pages general styles)
 https://youtu.be/6wOolplgB5o
 
-6. google sheets API: 
+6. google sheets API: (for services section)
 	https://youtu.be/VPI27L_fQC4 
 
 7. dependent dropdowns in javascript: 
