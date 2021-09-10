@@ -58,7 +58,7 @@ https://youtu.be/c5SIG7Ie0dM
 
 
 5. html css js - responsive design:	(for all pages general styles)
-https://youtu.be/6wOolplgB5o
+https://youtu.be/6wOolplgB5o : 56mins done
 
 6. google sheets API: (for services section)
 	https://youtu.be/VPI27L_fQC4 

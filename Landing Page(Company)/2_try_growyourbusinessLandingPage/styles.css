@@ -23,7 +23,9 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	height: 60px;
-	position: relative;
+	position: sticky;
+	top: 0;
+	width: 100%;
 	padding: 0.5rem calc((100vw - 1200px)/2);
 
 }
@@ -128,9 +130,23 @@ body{
 }
 
 
+/*home*/
+.home{
+	background: green;
+	height: 93.3vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0.5rem calc((100vw - 1200px)/2);
+	width: 100%;
 
+}
 
-
+.home__container{
+	background: blue;
+	width: 70%;
+	margin: 2rem;
+}
 
 /*Service1 : samples page*/
 .sample{
@@ -138,3 +154,4 @@ body{
 	height: 250px;
 	background: blue;
 }
+
