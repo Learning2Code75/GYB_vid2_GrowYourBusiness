@@ -13,3 +13,12 @@ const mobileMenu = ()=>{
 }
 
 menu.addEventListener('click',mobileMenu)
+
+
+// for the services: 
+// fetch data into an object varaible from a google sheet api 
+// data will be fetched for the service  
+
+// for the samples: 
+// fetch data into an object varaible from a google sheet api 
+// data will be fetched for the sample 

@@ -1,12 +1,44 @@
 # Grow Your Business
+Grow Your Business is a thought to help grow your online pressence.
+- has its landing page, youtube channel 
 
-## product perspective for landing page service
-1. grow your business by improving your online pressence
-2. display home page 
-3. contact page
-4. about page
-6. services page: 12 services till now
-5. pricing page: pricing for all 
+##Features of Landing page :
+1. responsive navbar 
+2. homepage with backgound , message
+3. services section with cards of services , list of features of services (data fetch from google sheets) 
+4. about, contact,social 
+5. landing page samples page : 
+  - a page to choose designs and models for building your own landing page
+  - pricing display , services display, gallery of images, homepage, about page, contact page, 
+  - social , visiting card display , keep adding infinitely to this page
+
+
+##Features of Personal Portfolio , Project Pitcher page :
+1. responsive navbar
+2. homepage with background, photo , message
+3. work section displaying all projects done in form of cards (data fetch from firebase)
+   - onclicking on card ===> directed to pitcher page for project(user guide , video) ((data from firebase))
+4. about, contact ,social , resume , cv
+5. personal portfolio samples page: 
+   - a page to choose designs and models for building your own personal portfolio, pitcher pages
+   - homepage , navbar , work section , about, contact , social , resume ,cv, 
+   - pitcher page in different forms: 
+     -- docs format including references/inspiration srs, sds ,use case description, task analysis, HTA, Storyboarding
+     -- user guide format
+     -- video guide format
+
+##Features of Distributor level Operations Manager: 
+1. 3002_pj
+2. DLOM samples page:
+   - a page containing different components of system: 
+   - orders crud
+   - client crud
+   - products crud(inventory)
+   - lead tracker
+   - catelogue display
+   - analytics for all
+
+
 
 ## software requirement specification: 
 1. landing page website using : HTML , CSS , JS
@@ -20,7 +52,22 @@
 		- pricing page : currently application is under development phase therefore providing one service per client for free 
 		- services page : 11 services as a grid, choose a service and contact me regarding it. 
 
-4. Services inside GYB application: 
+		- navbar: 
+		- homepage: 
+		- services grid , display features of each service at bottom(data from api)
+		- samples page: shopping cart (data from api) 
+		- about page
+		- social media icons
+
+
+4. SVG creation using inkscape for the following: 
+	1. gyb logo
+	2. homepage background
+	3. service1 background
+	4. service2 background
+	5. service3 background
+	
+5. Services inside GYB application: 
 	- D3.js visualizations
 	- Sales Order Generator: 
 		1. get product data from google sheets API
@@ -133,7 +180,7 @@ https://youtu.be/r4RQ38EoLds
     - what is js?
     - values, types, operators 
     - program structure
-    - functions  
+    - functions
     - data structures: objects and arrays
     - higher - order functions
     - modules 
@@ -264,4 +311,4 @@ https://youtu.be/r4RQ38EoLds
 
 # 5. html css - responsive design:
 - link :https://youtu.be/D-h8L5hgW-w
-
+  

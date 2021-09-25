@@ -218,3 +218,38 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+
+.memberships{
+	background:var(--black);
+	color:var(--white);
+	padding: 8rem calc((100vw - 1200px)/2);
+
+}
+
+.memberships h1{
+	margin-bottom:1rem;
+	font-size: clamp(2rem,5vw,3rem);
+	padding:1rem;
+}
+.memberships__desc{
+	margin-bottom:3rem;
+	font-size:clamp(1rem,3vw,1.5rem);
+	padding:1rem;
+}
+
+.memberships__wrapper{
+	background-color: beige;
+	display:flex;
+	justify-content: space-between;
+	align-items:flex-start;
+	padding:1rem;
+}
+
+.membership__card{
+	padding:2rem;
+	background:green;
+	min-height:450px;
+	
+
+}
