@@ -6,8 +6,8 @@ Grow Your Business is a thought to help grow your online pressence.
 1. responsive navbar 
 2. homepage with backgound , message
 3. services section with cards of services , list of features of services (data fetch from google sheets) 
-4. about, contact,social 
-5. landing page samples page : 
+4. about, contact,social ,footer
+5. landing page samples page : add cart , cart modal , theme change 
   - a page to choose designs and models for building your own landing page
   - pricing display , services display, gallery of images, homepage, about page, contact page, 
   - social , visiting card display , keep adding infinitely to this page
