@@ -3,15 +3,29 @@ Grow Your Business is a thought to help grow your online pressence.
 - has its landing page, youtube channel 
 
 ##Features of Landing page :
-1. responsive navbar 
-2. homepage with backgound , message
-3. services section with cards of services , list of features of services (data fetch from google sheets) 
-4. about, contact,social ,footer
-5. landing page samples page : add cart , cart modal , theme change 
+1. responsive navbar : (update links on all pages)
+2. homepage with backgound , message(bg image , grid of 4 steps with step no, step name , desc,action btn)
+3. services section with cards of services , list of features of services (data fetch from google sheets API , add appropriate images) 
+4. about, contact,social ,footer(style about,contact make footer)
+5. landing page samples page : add cart , cart modal , theme change , pdf print
   - a page to choose designs and models for building your own landing page
   - pricing display , services display, gallery of images, homepage, about page, contact page, 
   - social , visiting card display 
   - keep adding infinitely to this page
+
+### work left to complete project:
+1. homepage bg img, grid(solo)
+2. about, contact, social ,footer : icons, images , links(after vid)
+3. Animations everywhere: (after vid)
+4. javascript :(after vid) 
+ - samples page cart , cart modal , theme change, pdf print
+ - services data fetch from google sheets API
+5. make github readme as pitcher page
+6. make pitcher page, add to personal portfolio
+7. make youtube video of pitcher page(only docs) , upload video
+8. make repository public
+9. deploy repository on github pages, netlify 
+10. add project to Resume
 
 
 ##Features of Personal Portfolio , Project Pitcher page :
