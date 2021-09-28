@@ -10,7 +10,8 @@ Grow Your Business is a thought to help grow your online pressence.
 5. landing page samples page : add cart , cart modal , theme change 
   - a page to choose designs and models for building your own landing page
   - pricing display , services display, gallery of images, homepage, about page, contact page, 
-  - social , visiting card display , keep adding infinitely to this page
+  - social , visiting card display 
+  - keep adding infinitely to this page
 
 
 ##Features of Personal Portfolio , Project Pitcher page :
