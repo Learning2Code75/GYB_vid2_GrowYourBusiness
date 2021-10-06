@@ -143,12 +143,11 @@ body{
 
 /* sticky cart */
 .sticky-cart{
-	display: flex;
+	background: green;
 	height: 60px;
 	position: sticky;
 	top: 50%;
 	left:0;
-	width: 100%;
 	padding: 0.5rem calc((100vw - 1200px)/2);
 }
 .sticky-cart img{
@@ -351,6 +350,19 @@ body{
 
 }
 /*Service1 : samples page*/
+/*cart*/
+.cart-modal{
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+	background: green;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+
+}
+
+
 .sample{
 	
 	padding: 8rem calc((100vw - 1200px)/2);
