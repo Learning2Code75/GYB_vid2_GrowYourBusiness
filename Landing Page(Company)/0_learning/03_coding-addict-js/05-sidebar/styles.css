@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	position: relative;
+}
+.sidebar-toggle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 1rem;
+}
+
+.sidebar{
+	width: 100vw;
+	background: green;
+	z-index: 999;
+	padding: .4rem;
+	height: 100vh;
+	transform: translate(-100%);
+}
+.show-sidebar{
+	transform: translate(0);
+}
+
+.sidebar-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: cyan;
+	padding: 1rem;
+}
+
+@media screen and (min-width: 460px){
+	.sidebar{
+		width:40vw ;
+	}
+}
