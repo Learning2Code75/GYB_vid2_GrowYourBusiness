@@ -66,6 +66,21 @@ body{
 	margin: .2rem;
 }
 
+.navbar__menu a{
+	padding: .8rem .5rem;
+	border-radius: .2rem;
+	transition: 200ms ease-in-out ;
+	margin: .2rem;
+
+}
+
+.navbar__menu a:hover{
+	background: var(--blue);
+	font-weight: 900;
+	font-size: 1.1rem;
+	color: black;
+}
+
 @media screen and (max-width: 768px){
 	body.active{
 		overflow-x: hidden;

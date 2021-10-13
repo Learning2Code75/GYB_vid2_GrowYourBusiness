@@ -3,11 +3,11 @@ Grow Your Business is a thought to help grow your online pressence.
 - has its landing page, youtube channel 
 
 ##Features of Landing page :
-1. responsive navbar : (update links on all pages)
+1. responsive navbar : (add better logo) , change on scroll , add scroll to top button
 2. homepage with backgound , message(bg image , grid of 4 steps with step no, step name , desc,action btn)
 3. services section with cards of services , list of features of services (data fetch from google sheets API , add appropriate images) 
-4. about, contact,social ,footer(style about,contact make footer)
-5. landing page samples page : add cart , cart modal  , pdf print
+4. about, contact,social ,footer(style about,contact make footer) , dynamic date
+5. landing page samples page : add cart , cart modal- only selections shown  , pdf print
   - a page to choose designs and models for building your own landing page
   - pricing display , services display, gallery of images, homepage, about page, contact page, 
   - social , visiting card display 

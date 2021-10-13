@@ -78,3 +78,24 @@ header::after{
 .slide .switch{
 	left: 50%;
 }
+
+
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: grid;
+	background: white;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
+	z-index: 999;
+	transition: 200ms ease-in-out;
+}
+
+.hide-preloader{
+	z-index: -999;
+	visibility: hidden;
+}
