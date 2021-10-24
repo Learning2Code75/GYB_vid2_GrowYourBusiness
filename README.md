@@ -2,9 +2,16 @@
 Grow Your Business is a thought to help grow your online pressence.
 - has its landing page, youtube channel 
 
+## call to action 
+1. view samples
+2. change theme : -colors 
+3. add to cart
+4. view cart, download pdf
+5. email the pdf to me on this email id
+6. video explaining above + live reload of updated data in google sheet 
 ##Features of Landing page :
 1. responsive navbar : (add better logo) , change on scroll , add scroll to top button
-2. homepage with backgound , message(bg image , grid of 4 steps with step no, step name , desc,action btn)
+2. homepage with backgound , message(bg image , grid of 4 steps with step no, step name , desc,action btn): call to action
 3. services section with cards of services , list of features of services (data fetch from google sheets API , add appropriate images) 
 4. about, contact,social ,footer(style about,contact make footer) , dynamic date
 5. landing page samples page : add cart , cart modal- only selections shown  , pdf print
