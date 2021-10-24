@@ -127,7 +127,7 @@ https://youtu.be/c5SIG7Ie0dM
 
 
 5. html css js - responsive design:	(for all pages general styles)
-https://youtu.be/6wOolplgB5o : 56mins done
+https://youtu.be/6wOolplgB5o : (done)
 
 6. google sheets API: (for services section)
 	https://youtu.be/VPI27L_fQC4 
@@ -333,4 +333,10 @@ https://youtu.be/r4RQ38EoLds
 
 # 5. html css - responsive design:
 - link :https://youtu.be/D-h8L5hgW-w
-  
+- animations : gsap: https://greensock.com/get-started/
+
+
+
+
+# 3. coding addict - js for general utilities: 
+https://youtu.be/c5SIG7Ie0dM
