@@ -10,7 +10,7 @@ A web application to build your own landing page using data on google sheet to m
 ## Data of Landing Page will be managed from google sheets
 1. home data
 2. about data
-3. project/ work data
+3. previous projects/ work data
 4. product/service data
 5. contact us data
 
