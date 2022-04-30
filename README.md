@@ -22,14 +22,16 @@ A web application to build your own landing page using data on google sheet to m
 # References (goal : display , parse data using JS + style using JS with CSS)
 1. (style using js+css)javascript coding addict : https://youtu.be/c5SIG7Ie0dM (doing)
 2. (display,parse data using JS)google sheets API: (for services section)
-	https://youtu.be/VPI27L_fQC4 (doing)
+- https://youtu.be/VPI27L_fQC4 (done)
+- https://youtu.be/yiPnkBEHqf0 (doing)
 3. [10 min]extra css, examples section for GYB :
 	-   traversy media - html css: learnt about templating css like bootstrap , css grids https://youtu.be/p0bGHP-PXD4
 	- html css js - responsive design: (for all pages general styles) https://youtu.be/6wOolplgB5o : (done)
 	- css snippets :
 	-
-
-
+4. Apps Script : https://developers.google.com/apps-script/reference/ 
+5. Apps Script quotas : https://developers.google.com/apps-script/guides/services/quotas 
+6. Apps Script deployments : https://developers.google.com/apps-script/concepts/deployments
 
 
 
