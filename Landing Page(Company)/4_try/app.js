@@ -26,5 +26,33 @@ getDataBtn.addEventListener("click",testDataInput);
 
 
 const generateUSPHomePage =(data)=>{
+  const homepageDataDiv = document.querySelector(".uspHomePageData");
+
   console.log(data);
+  console.log(data[0]);
+  const USPPitch = data[0].USPPitch;
+  // console.log(USPPitch)
+
+  const callToAction = []
+  data.map((d,i)=>(
+    // console.log(d.CallToAction ,i)
+    callToAction[i] = d.CallToAction
+  ))
+  console.log(callToAction)
+
+  homepageDataDiv.innerHTML= `
+  <h1>
+    ${USPPitch}
+  </h1>
+  <p>
+  <ul>
+`;
+      for(i=0;i<callToAction.length;i++){
+        homepageDataDiv.innerHTML+=`<li>${callToAction[i]}</li>`
+      }
+    homepageDataDiv.innerHTML+=`
+    </ul>
+    </p>
+    `
+    
 }
