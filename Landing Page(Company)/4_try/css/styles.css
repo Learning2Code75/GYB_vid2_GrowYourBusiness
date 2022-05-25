@@ -8,7 +8,9 @@ body{
 
 .uspHomePage{
   background: gray;
-
+}
+.pitcherPageLink{
+  
 }
 
 
@@ -28,7 +30,24 @@ body{
 
 }
 
-.contactPage{
-  background: gray;
 
+
+
+
+/* utilities */
+
+.headerUtil{
+  background: white;
 }
+.grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid1-item{
+  background-color: white;
+  border:2px solid black;
+  max-width: 300px;
+}
+
