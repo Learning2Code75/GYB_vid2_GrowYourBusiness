@@ -1,0 +1,211 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vw;
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    scroll-padding-top: 4rem;
+}
+
+.root{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+/* Navbar */
+nav{
+    height: 4rem;
+    background:rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+}
+.grid4{
+    height: 4rem;
+}
+
+.logo img{
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    /* top:.5rem; */
+    top:.1rem;
+    left:5%;
+}
+
+.grid4{
+    /* background:green; */
+}
+.nav-items{
+    /* background:pink; */
+    float:right;
+    margin-right:1.2rem;
+}
+.nav-items .grid4-item{
+    display:inline-block;
+    margin:0 .4rem;
+    background-color: rgba(0,0,0,.8);
+    padding:.5rem;
+    border-radius: 1rem;
+}
+.nav-items .grid4-item a{
+    position:relative;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:.3rem 0;
+}
+.nav-items .grid4-item a:before{
+    position:absolute;
+    content:'';
+    left:0;
+    bottom:0;
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+.nav-items .grid4-item a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel{
+    color:white;
+    background-color: rgba(0,0,0,.8);
+    font-size:2rem;
+    float:right;
+    margin-right:.5rem;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    top:37%;
+    right:0;
+    padding: .5rem;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+#check{
+    display:none;
+}
+label #btn{
+    display:block;
+}
+.nav-items{
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    top:4rem;
+    padding:.5rem 0 ; 
+    text-align: center;
+    left: 100%;
+    transition: all .5s;
+    padding-left: 35vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-items .grid4-item{
+    /* display:block; */
+    margin: 1rem 2rem;
+    /* line-height: 4rem; */
+    padding:.5rem 1.2rem;
+    width:8rem;
+
+}
+
+.nav-items .grid4-item a{
+    font-size: 1.5rem;
+}
+#check:checked ~ * .nav-items{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    display:none;
+}
+#check:checked ~ label #cancel{
+    display:block;
+}
+@media(max-width: 1118px){
+    .logo img{
+        left : 3%;
+    }
+
+}
+
+@media(max-width: 944px){
+
+    .logo img{
+        left:2%;
+        width:130px;
+        height:60px;
+    }
+    /* .nav-items .grid4-item a{
+        font-size: .8rem;
+    } */
+}
+
+@media(max-width: 860px){
+
+
+
+}
+
+/* USP Homepage */
+
+.uspHomePage{
+    padding-top:4rem;
+    /* height: calc(100vh - 4rem); */
+    width: 100vw;
+
+}
+.uspHomePage .uspHomePageData{
+    background:#f0f0f0;
+    padding:0 2rem;
+    display: grid;
+	grid-template-columns: repeat( 3, minmax(250px, 1fr) );
+
+
+
+}
+.uspHomePage .uspHomePageData > *:first-child{
+    grid-column: 1/span 3;
+}
+.uspHomePage .uspHomePageData > *:nth-child(2){
+    grid-column: 1/span 2;
+}
+
+.headerUtil , .grid1 , .ytvid , .pitcherPage , .googleForm , .social {
+	background:white;
+	color:black;
+	border-radius:.6rem;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+	padding:1.6rem;
+	margin:1.2rem;
+}
+
+@media(max-width: 1004px){
+    .uspHomePage .uspHomePageData{
+        grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+    }
+
+}
+
+
+
+/* Projects Page */
+
+
+/* About Page */

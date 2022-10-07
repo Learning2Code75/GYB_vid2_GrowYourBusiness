@@ -1,30 +1,32 @@
-let USP_homepage =[];
-const testDataInput = ()=>{
+let USP_homepage = [];
+const testDataInput = () => {
   const getDataBtn = document.getElementById("getDataBtn");
-  getDataBtn.classList.add('disappear');
+  getDataBtn.classList.add("disappear");
 
   // const url = "https://script.google.com/macros/s/AKfycbxnkKijEj4WRTZOyt29oWqTmMKzBlb25lRpT6SSQivfusALTRYfkIQKJOTbcmkfqoT00g/exec"
   // const url = "https://script.google.com/macros/s/AKfycbyzZy8ZrhRdTx-yEQZNIvhZNW7pZcZAzFObQmShYQH9cTvPAFYfcS43jrQitkNjD7DfGQ/exec"
   // const url = "https://script.google.com/macros/s/AKfycbzAMObkKfmBYMdUHMTM4FKJRntbPBxLweLdyZKvX2Ut3vhqrzeiqyVvBQlROiZyxXVilQ/exec"
-  const url = "https://script.google.com/macros/s/AKfycbzNF4DJVb_gBvo8-SEi8bOYNy1-EBa2YvG8DuYECtPD6ImfkWwNYCNzPtbaRceraIaoSA/exec"
+  const url =
+    "https://script.google.com/macros/s/AKfycbzNF4DJVb_gBvo8-SEi8bOYNy1-EBa2YvG8DuYECtPD6ImfkWwNYCNzPtbaRceraIaoSA/exec";
   fetch(url)
-    .then(d=>d.json())
-    .then(d=>{
-        // document.getElementById("dataInputFromClient").textContent = d[0].data;
-        console.log(d)
-        // console.log(d[0].data);
-        USP_homepage = d[0].data;
-        // console.log(USP_homepage)
-        generateUSPHomePage(USP_homepage);
+    .then((d) => d.json())
+    .then((d) => {
+      // document.getElementById("dataInputFromClient").textContent = d[0].data;
+      console.log(d);
+      // console.log(d[0].data);
+      generateNavbar();
 
-        projectPage = d[0].projectPage;
-        generateProjectPage(projectPage);
+      USP_homepage = d[0].data;
+      // console.log(USP_homepage)
+      generateUSPHomePage(USP_homepage);
 
-        aboutPage = d[0].aboutPage;
-        generateAboutPage(aboutPage);
-    })
+      projectPage = d[0].projectPage;
+      generateProjectPage(projectPage);
 
-}
+      aboutPage = d[0].aboutPage;
+      generateAboutPage(aboutPage);
+    });
+};
 
 // testDataInput();
 
@@ -32,12 +34,32 @@ const testDataInput = ()=>{
 
 const getDataBtn = document.getElementById("getDataBtn");
 // console.log(getDataBtn)
-getDataBtn.addEventListener("click",testDataInput);
+getDataBtn.addEventListener("click", testDataInput);
 
+const generateNavbar = () => {
+  const navbarDiv = document.querySelector(".navbar");
+  navbarDiv.innerHTML = `
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class = "fas fa-bars" id="btn"></i>
+    <i class = "fas fa-times" id="cancel"></i>
 
+  
+    <div class="grid4">
+    <div class="logo">
+      <img src="./img/GYB.png"/>
+    </div>
+    <div class="nav-items">
+      <div class="grid4-item"><a href="#homepage">Home</a></div>
+      <div class="grid4-item"><a href="#projects">Projects</a></div>
+      <div class="grid4-item"><a href="#about">About</a></div>
+    </div>
+      </div>
+      </label>
+  `;
+};
 
-
-const generateUSPHomePage =(data)=>{
+const generateUSPHomePage = (data) => {
   const homepageDataDiv = document.querySelector(".uspHomePageData");
 
   console.log(data);
@@ -51,96 +73,85 @@ const generateUSPHomePage =(data)=>{
   const github = data[0].GithubLink;
   const youtube = data[0].YoutubeLink;
 
-
   // console.log(USPPitch)
 
-  const callToAction = []
-  data.map((d,i)=>(
-    // console.log(d.CallToAction ,i)
-    callToAction[i] = d.CallToAction
-  ))
-  console.log(callToAction)
+  const callToAction = [];
+  data.map(
+    (d, i) =>
+      // console.log(d.CallToAction ,i)
+      (callToAction[i] = d.CallToAction)
+  );
+  console.log(callToAction);
 
-  homepageDataDivIHTML= `
-  <h1 class="headerUtil">
+  homepageDataDivIHTML = `
+  <h1 class="headerUtil" id="homepage">
     ${USPPitch}
   </h1>
 
 `;
-    homepageDataDivIHTML +='  <div class="grid1">';
-      for(i=0;i<callToAction.length;i++){
-
-        if(callToAction[i]!==""){
-          homepageDataDivIHTML+=`<div class="grid1-item">${callToAction[i]}</div>`
-        }
-      }
-      homepageDataDivIHTML+=`
+  homepageDataDivIHTML += '  <div class="grid1" >';
+  for (i = 0; i < callToAction.length; i++) {
+    if (callToAction[i] !== "") {
+      homepageDataDivIHTML += `<div class="grid1-item">${callToAction[i]}</div>`;
+    }
+  }
+  homepageDataDivIHTML += `
     </div>
-    `
+    `;
 
-    homepageDataDivIHTML+=`
-    <div>
+  homepageDataDivIHTML += `
+    <div class="ytvid">
       <iframe width="auto" height="auto" src="${howToUseVideoLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     `;
 
-    homepageDataDivIHTML+=`
+  homepageDataDivIHTML += `
     <div class="pitcherPage">
       <a target="__blank" class="pitcherPageLink" href="${pitcherPageLink}">
         Pitcher Page for Grow Your Business
       </a>
     </div>
-    `
-    homepageDataDivIHTML+=`
+    `;
+  homepageDataDivIHTML += `
     <div class="googleForm">
       <a target="__blank" class="googleFormLink" href="${googleFormLink}">
         Click on the google form to build your landing page with us.
       </a>
     </div>
-    `
+    `;
 
-    homepageDataDivIHTML+=`
+  homepageDataDivIHTML += `
+  <div class="social">
     <div class="email">
       <a target="__blank" class="emailLink" href="${email}">
       email icon
       </a>
     </div>
-    `
-
-    homepageDataDivIHTML+=`
     <div class="yt">
-      <a target="__blank" class="ytLink" href="${youtube}">
-      youtube icon
-      </a>
-    </div>
-    `
+    <a target="__blank" class="ytLink" href="${youtube}">
+    youtube icon
+    </a>
+  </div>
+  <div class="github">
+  <a target="__blank" class="githubLink" href="${github}">
+  github icon
+  </a>
+</div>
+</div>`;
 
-    homepageDataDivIHTML+=`
-    <div class="github">
-      <a target="__blank" class="githubLink" href="${github}">
-      github icon
-      </a>
-    </div>
-    `
+  homepageDataDiv.innerHTML = homepageDataDivIHTML;
+};
 
-
-
-
-
-
-    homepageDataDiv.innerHTML=homepageDataDivIHTML;
-}
-
-const generateProjectPage = (data)=>{
-  console.log(data)
+const generateProjectPage = (data) => {
+  console.log(data);
   const projectPageDataDiv = document.querySelector(".projectPage");
 
-  let projectPageDivIHTML = ``
+  let projectPageDivIHTML = ``;
   projectPageDivIHTML += `
-    <div class="grid-2">
-  `
+    <div class="grid-2" id="projects">
+  `;
 
-  for(let i=0; i<data.length;i++){
+  for (let i = 0; i < data.length; i++) {
     projectPageDivIHTML += `
       <h2>${data[i].projectName}</h2>
       <img width="250" height="250" src="${data[i].imgUrl}" />
@@ -158,28 +169,25 @@ const generateProjectPage = (data)=>{
         <p>${data[i].projectTech}</p>
       </div>
 
-    `
+    `;
   }
 
-  projectPageDivIHTML+=`
+  projectPageDivIHTML += `
     </div>
-  `
+  `;
   projectPageDataDiv.innerHTML = projectPageDivIHTML;
+};
 
-}
-
-
-
-const generateAboutPage=(data)=>{
-  console.log(data)
+const generateAboutPage = (data) => {
+  console.log(data);
   const aboutPageDataDiv = document.querySelector(".aboutPage");
 
-  let aboutPageDivIHTML = ``
+  let aboutPageDivIHTML = ``;
   aboutPageDivIHTML += `
-    <div class="grid-2">
-  `
+    <div class="grid-3" id="about">
+  `;
 
-  for(let i=0; i<data.length;i++){
+  for (let i = 0; i < data.length; i++) {
     aboutPageDivIHTML += `
       <h2>${data[i].name}</h2>
       <img src="${data[i].imgUrl}" />
@@ -191,12 +199,11 @@ const generateAboutPage=(data)=>{
       </div>
 
 
-    `
+    `;
   }
 
-  aboutPageDivIHTML+=`
+  aboutPageDivIHTML += `
     </div>
-  `
+  `;
   aboutPageDataDiv.innerHTML = aboutPageDivIHTML;
-
-}
+};
